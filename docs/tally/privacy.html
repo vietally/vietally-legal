@@ -15,27 +15,38 @@
 <body>
 
 <h1>Chính sách quyền riêng tư — Tally</h1>
-<p>Cập nhật lần cuối: 29/08/2026</p>
+<p>Cập nhật lần cuối: 25/09/2026</p>
 
 <p>Tally là ứng dụng ghi chép chi tiêu cá nhân do <strong>Vietally</strong> phát triển. Chính sách này
 mô tả những dữ liệu ứng dụng thu thập, vì sao, và cách bạn kiểm soát chúng.</p>
 
 <h2>Dữ liệu chúng tôi thu thập</h2>
 <ul>
-  <li><strong>Email (qua đăng nhập Google)</strong> — chỉ khi bạn chọn đăng nhập để dùng tính năng
-  ví chia sẻ. Dùng để xác định bạn là thành viên của ví nào, và để mời/quản lý thành viên khác.</li>
-  <li><strong>Dữ liệu giao dịch tài chính</strong> (số tiền, phân loại, ghi chú, ngày) — dùng để
-  hiển thị và đồng bộ giao dịch của bạn giữa các thiết bị/thành viên trong ví chia sẻ.</li>
+  <li><strong>Email và tên hiển thị (qua đăng nhập Google)</strong> — chỉ khi bạn chọn đăng nhập.
+  Dùng để đồng bộ và khôi phục dữ liệu giữa các thiết bị, và để mời/quản lý thành viên trong ví
+  chia sẻ.</li>
+  <li><strong>Dữ liệu giao dịch tài chính</strong> (số tiền, phân loại, ghi chú, ngày, hạn mức
+  ngân sách) — dùng để hiển thị, và khi bạn đăng nhập thì để đồng bộ giữa các thiết bị/thành viên
+  trong ví chia sẻ.</li>
   <li><strong>Vị trí (không bắt buộc)</strong> — chỉ khi bạn tự chọn lưu toạ độ cho một giao dịch,
   dùng để hiển thị ảnh bản đồ tại đúng vị trí đó.</li>
+  <li><strong>Câu nói không nhận dạng được</strong> — khi bạn đã đăng nhập và nhập bằng giọng nói
+  nhưng ứng dụng không hiểu được số tiền hoặc phân loại, văn bản của câu nói đó (không phải file
+  âm thanh) cùng mã tài khoản được gửi lên Firebase để cải thiện khả năng nhận dạng.</li>
+  <li><strong>Câu hỏi cho trợ lý AI</strong> — khi bạn dùng tính năng hỏi AI về chi tiêu, câu hỏi
+  của bạn cùng các giao dịch liên quan (số tiền, phân loại, ghi chú, ngày, tên thành viên trong ví
+  chia sẻ) được gửi tới Google Gemini để tạo câu trả lời. Không dùng tính năng này thì không có gì
+  được gửi đi.</li>
 </ul>
-<p>Nếu bạn không đăng nhập, ứng dụng lưu toàn bộ dữ liệu chỉ trên thiết bị của bạn, không gửi đi
-đâu cả.</p>
+<p>Nếu bạn không đăng nhập và không dùng giọng nói hay trợ lý AI, toàn bộ dữ liệu chỉ nằm trên
+thiết bị của bạn.</p>
 
 <h2>Bên thứ ba xử lý dữ liệu</h2>
 <ul>
-  <li><strong>Firebase (Google)</strong> — lưu trữ email và dữ liệu giao dịch khi bạn dùng ví
-  chia sẻ. Dữ liệu truyền qua kết nối mã hoá (HTTPS/TLS).</li>
+  <li><strong>Firebase (Google)</strong> — lưu trữ email, dữ liệu giao dịch và câu nói không nhận
+  dạng được khi bạn đăng nhập. Dữ liệu truyền qua kết nối mã hoá (HTTPS/TLS).</li>
+  <li><strong>Google Gemini (qua Firebase AI Logic)</strong> — xử lý câu hỏi và giao dịch liên
+  quan khi bạn dùng trợ lý AI, theo điều khoản của Google.</li>
   <li><strong>OpenStreetMap</strong> — khi bạn xem ảnh bản đồ của một giao dịch có toạ độ, ứng
   dụng tải 1 ảnh tile bản đồ từ <code>tile.openstreetmap.org</code> tương ứng vị trí đó.</li>
   <li><strong>Bộ nhận dạng giọng nói của Google/Android</strong> — khi bạn dùng tính năng nhập
